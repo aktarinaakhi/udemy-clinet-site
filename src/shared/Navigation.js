@@ -6,7 +6,7 @@ import { BsCart3 } from "react-icons/bs";
 
 export default function Navigation() {
     return (
-        <nav className="flex items-center justify-between flex-wrap p-3 shadow-lg">
+        <nav className="flex items-center justify-between flex-wrap p-3 shadow-lg text-sm">
             <div className="flex items-center flex-shrink-0 text-black ml-4">
 
                 <img className='w-full' src={logo} alt="" />
@@ -34,10 +34,10 @@ export default function Navigation() {
                     <span className='block mt-4 lg:inline-block ml-5'>Teach On Udemy</span>
                     <span className='block mt-4 lg:inline-block mx-5 text-xl'><BsCart3 /></span>
 
-                    <span className="block border py-2 px-3 border-black  mt-4 lg:inline-block lg:mt-0 text-black mr-4">
+                    <span className="block font-semibold border py-2 px-3 border-black  mt-4 lg:inline-block lg:mt-0 text-black mr-4">
                         Log in
                     </span>
-                    <span className=" bg-black  rounded-none block mt-4 lg:inline-block lg:mt-0 text-white py-2 px-3 mr-4">
+                    <span className=" bg-black font-semibold text-md rounded-none block mt-4 lg:inline-block lg:mt-0 text-white py-2 px-3 mr-4">
                         Sign up
                     </span>
                 </div>
