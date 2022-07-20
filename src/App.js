@@ -1,9 +1,10 @@
 import './App.css';
+import Navigation from './shared/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <h1>Udmy</h1>
+      <Navigation />
     </div>
   );
 }
