@@ -12,34 +12,88 @@ import music from '../asstes/lohp-category-music-v2.jpg'
 export default function TopCategorys() {
     return (
         <div className='container mx-auto'>
-            <h1>Top categories</h1>
-            <div className="max-w-2xl mx-auto pt-16 px-4 lg:pb-1 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-1">
-                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-1">
+            <h1 className='xl:ml-32 text-2xl font-bold'>Top categories</h1>
+            <div className="max-w-2xl mx-auto lg:max-w-7xl">
+                <div className="my-6 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
-                    <div className="group relative hover:shadow-lg px-3 lg:h-4/5">
-                        <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-1/2 lg:aspect-none">
-                            <img
-                                src={design}
-                                alt=""
-                                className="w-full h-full object-center object-fill lg:w-full lg:h-full"
-                            />
-                        </div>
-                        <div className="mt-4 flex justify-between">
-                            <div>
-                                <h3 className="text-sm text-gray-900">  </h3>
-                                <p className="mt-1 text-sm text-gray-500"></p>
-                                <p className="text-sm font-medium text-orange-500 mt-2">$ </p>
-
-                            </div>
-                        </div>
-
-
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={design}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10 '>Design</p>
                     </div>
 
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={development}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>Development</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={marketing}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>Marketing</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={itAndSoftware}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>It and Software</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={personalDevelopment}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>personal Development</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={business}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>Business</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={photography}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>Photography</p>
+
+                    </div>
+                    <div className="w-full rounded-md lg:h-full">
+                        <img
+                            src={music}
+                            alt=""
+                            className="w-full h-full object-center object-fill lg:w-full lg:h-full hover:scale-105 ease-in duration-100"
+                        />
+                        <p className='font-semibold mb-10'>Music</p>
+
+                    </div>
                 </div>
 
             </div>
+
         </div>
+
 
     )
 }
