@@ -3,6 +3,10 @@
     apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
+.footer-logo {
+  font-family: udemy sans, BlinkMacSystemFont, Roboto, segoe ui, Helvetica,
+    Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
