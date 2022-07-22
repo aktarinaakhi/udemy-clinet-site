@@ -6,6 +6,8 @@ import Brands from './components/Brands';
 import FeaturedTopicsByCategory from './components/FeaturedTopicsByCategory';
 import StudentsAreViewing from './components/StudentsAreViewing';
 import TopCategorys from './components/TopCategorys';
+import Transform from './components/Transform';
+import UdemyBusiness from './components/UdemyBusiness';
 import Navigation from './shared/Navigation';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <FeaturedTopicsByCategory />
       <BecomeAnInstructor />
       <Brands />
+      <UdemyBusiness />
+      <Transform />
 
     </div>
   );

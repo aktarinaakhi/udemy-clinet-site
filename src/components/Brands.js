@@ -7,25 +7,27 @@ import brand5 from '../asstes/brand5.jpg'
 
 export default function Brands() {
     return (
-        <div className='bg-slate-50 py-10 relative container mx-auto'>
-            <h1 className='text-2xl text-center font-semibold'>Trusted by companies of all sizes</h1>
-            <div className='grid grid-cols-5 justify-center items-center content-center self-center place-content-center place-items-center flex-col absolute '>
-                <div>
-                    <img className='' src={brand1} alt="" />
-                </div>
-                <div>
-                    <img className='w-1/2' src={brand2} alt="" />
-                </div>
-                <div>
-                    <img className='w-1/2' src={brand5} alt="" />
-                </div>
+        <div className='bg-slate-50 py-10'>
+            <div className='container mx-auto'>
+                <h1 className='text-2xl text-center font-semibold'>Trusted by companies of all sizes</h1>
+                <div className='w-1/3 flex items-center justify-center'>
+                    <div className='w-1/3'>
+                        <img className='' src={brand1} alt="" />
+                    </div>
+                    <div className='w-1/6'>
+                        <img src={brand2} alt="" />
+                    </div>
+                    <div className='w-1/6 '>
+                        <img src={brand5} alt="" />
+                    </div>
 
-                <div>
-                    <img src={brand3} alt="" />
-                </div>
+                    <div className='w-1/3'>
+                        <img src={brand3} alt="" />
+                    </div>
 
-                <div>
-                    <img src={brand4} alt="" />
+                    <div className='w-1/3'>
+                        <img src={brand4} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
