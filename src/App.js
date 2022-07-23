@@ -1,30 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Banner from './components/Banner';
-import BecomeAnInstructor from './components/BecomeAnInstructor';
-import BoardSelectionOfCourses from './components/BoardSelectionOfCourses';
-import Brands from './components/Brands';
-import FeaturedTopicsByCategory from './components/FeaturedTopicsByCategory';
-import StudentsAreViewing from './components/StudentsAreViewing';
-import TopCategorys from './components/TopCategorys';
-import Transform from './components/Transform';
-import UdemyBusiness from './components/UdemyBusiness';
-import Footer from './shared/Footer';
+import Python from './components/courses/Python';
+import Home from './components/Home';
 import Navigation from './shared/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Banner />
-      <BoardSelectionOfCourses />
-      <StudentsAreViewing />
-      <TopCategorys />
-      <FeaturedTopicsByCategory />
-      <BecomeAnInstructor />
-      <Brands />
-      <UdemyBusiness />
-      <Transform />
-      <Footer />
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+
+          <Route exact path="/" element={<Home />}> </Route>
+          <Route exact path="home" element={<Home />}> </Route>
+          <Route exact path="python" element={<Python />}> </Route>
+
+
+        </Routes>
+
+      </BrowserRouter>
+
+
 
     </div>
   );
