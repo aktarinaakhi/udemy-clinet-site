@@ -34,13 +34,18 @@ export default function Navigation() {
                     <span className='block mt-4 lg:inline-block ml-5'>Udemy Business</span>
                     <span className='block mt-4 lg:inline-block ml-5'>Teach On Udemy</span>
                     <span className='block mt-4 lg:inline-block mx-5 text-xl'><BsCart3 /></span>
+                    <Link to="/login">
+                        <span className="block font-semibold border py-2 px-3 border-black  mt-4 lg:inline-block lg:mt-0 text-black mr-4">
+                            Log in
+                        </span>
+                    </Link>
 
-                    <span className="block font-semibold border py-2 px-3 border-black  mt-4 lg:inline-block lg:mt-0 text-black mr-4">
-                        Log in
-                    </span>
-                    <span className=" bg-black font-semibold text-md rounded-none block mt-4 lg:inline-block lg:mt-0 text-white py-2 px-3 mr-4">
-                        Sign up
-                    </span>
+                    <Link to="/register">
+                        <span className=" bg-black font-semibold text-md rounded-none block mt-4 lg:inline-block lg:mt-0 text-white py-2 px-3 mr-4">
+                            Sign up
+                        </span>
+                    </Link>
+
                 </div>
 
             </div>
