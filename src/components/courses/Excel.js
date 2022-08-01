@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 
+export default function Excel() {
 
-export default function Python() {
     const [courses, setCourses] = useState([]);
     SwiperCore.use([EffectCoverflow, Pagination]);
 
@@ -19,7 +19,6 @@ export default function Python() {
             .then(res => res.json())
             .then(data => setCourses(data))
     }, [courses])
-
     return (
         <div className='footer-logo'>
             <h1 className='text-2xl font-semibold'>Expand your career opportunities with Python</h1>
@@ -47,18 +46,24 @@ export default function Python() {
                         key={product._id}
                         className='hover:shadow-lg my-4 w-96'
                     >
+
+
                         <div>
                             <img src={product.img} alt="" className='mb-3 h-64' />
                             <div className='px-3'>
-                                <p>{product.name}</p>
-                                <p className='text-sm text-gray-500'>{product.teacher}</p>
-                                <p>$ {product.price}</p>
+                                <p>{product.name.slice(0, 30)}</p>
+                                <p>{product.descriptoin}</p>
+                                <p>{product.price}</p>
                             </div>
                         </div>
+
+
 
                     </SwiperSlide>)}
                 </Swiper>
             </div>
+
+
         </div>
     )
 }
